@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(225, 100%, 94%);
+}
+div.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Red Hat Display', sans-serif;
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+@media (max-width:580px) {
+  div.wrapper{  
+    background-image: url('./images/pattern-background-mobile.svg');
+  }
+}
+div.wrapper div.card{
+  width: 320px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+div.wrapper div.card img{
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+div.wrapper div.card div.body{
+  padding: 5% 10%;
+}
+div.card div.body h1{
+  text-align: center;
+  color:hsl(223, 47%, 23%);
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+div.card div.body p{
+  color: hsl(224, 23%, 55%);
+  text-align: center;  
+  line-height: 1.7;
+}
+
+div.body div.plan{
+  display: grid;
+  grid-template-columns: 2fr 6fr 3fr;
+  margin: 10px 0;
+  align-items: center;
+  padding:20px 10px;
+  background-color: rgba(0,0,0,.03);
+  border-radius: 5px;
+  gap: 10px;
+}
+div.body div.plan span img{
+  width: 40px;
+  height: 40px;
+}
+div.body div.plan div.duration{
+  line-height: 1.5;
+}
+div.body div.plan div.duration h2{
+  font-size: 100%;
+  color: hsl(223, 47%, 23%);
+}
+div.body div.plan div.duration span{
+  font-size: 14px;
+  color: hsl(224, 23%, 55%);
+}
+div.body div.plan a.change{
+  display: block;    
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 14px;
+}
+div.body div.buttons{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+}
+div.body div.buttons button:nth-child(1){
+  border: none;
+  outline: none;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+}
+
+div.body div.buttons button:nth-child(2){
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: hsl(224, 23%, 55%);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+}
+
+div.attribution{
+  font-family: 'Red Hat Display', sans-serif;
+  margin-top: 50px;  
+  font-size: 18px;
+}
+div.attribution a{
+  text-decoration: none;  
+}
